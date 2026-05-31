@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .vid{
+            background-color: rgb(138, 230, 96);
+             list-style-type: none;
+             display: flex;
+             padding: 20px;
+            
+        }
+        .vid a{
+            color: rgb(13, 13, 14);
+            text-decoration: none;
+            padding: 30px;
+    
+        }
+        .dropdown{
+            list-style-type: none;
+            width: 160px;
+            position: absolute;
+            padding: 15px;
+            background-color: rgb(113, 250, 113);
+            visibility: hidden;
+    
+
+        }
+        .dropdown a{
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            
+        }
+        .dropdown a:hover{
+            color: black;
+            background-color: rgb(48, 141, 48);
+        }
+        .sub{
+            position: relative;
+        }
+        .sub:hover> .dropdown{
+            visibility: visible;
+        }
+        .submenu{
+            left: 160px;
+            top: 0px;
+        }
+        
+    </style>
+    <body>
+        <ul class="vid">
+            <li class="sub"><a href="#">☰</a>
+           
+        <ul class="dropdown">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li class="sub"><a href="#"> CATEGORY</a>
+            <ul class="dropdown submenu">
+                <li class="sub"><a href="#">SNACKS</a>
+                <ul class="dropdown submenu">
+                    <li><a href="#">BISCUIT</a></li>
+                    <li><a href="#"> BUTTER BISCUIT </a></li>
+                    <li><a href="#"> GHEE BISCUIT</a></li>
+                </ul></li>
+            </li>
+                <li><a href="#">JUICE</a></li>
+                <li><a href="#">FRUITS</a></li>
+            </ul></li>
+            <li><a href="#">CONTANCT</a></li>
+        </ul>
+        </li>
+         </ul>
+       
+
+    </body>
+</html>
